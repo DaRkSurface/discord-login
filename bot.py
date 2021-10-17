@@ -2,6 +2,7 @@
 # Author: drk
 # Date: Oct 16 2021
 # Made for improving my skills in Python and Selenium
+# DISCONTINUED...
 #####################################################
 
 #Importing Modules
@@ -15,13 +16,14 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 #Some important variables
-PATH = r"/home/drk/Desktop/selenium/chromedriver"
+#Download chrome driver at https://chromedriver.chromium.org/downloads (Check your browser version.
+PATH = r"Path/to/chromedriver"
 driver = webdriver.Chrome(PATH)
-site = "https://discord.com/login"
+site = "discord url to server/channel or whatever"
 
 #Credentials
-email = "hello@bro.com"
-passwd = "nah123"
+email = "email to account"
+passwd = "password to account"
 
 driver.get(site)
 print("\nEntered", driver.title)
